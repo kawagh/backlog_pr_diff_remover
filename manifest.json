@@ -1,0 +1,10 @@
+{
+  "name": "backlog_pr_diff_remover",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "remove diff at specific files in PullRequest in Backlog",
+  "content_scripts": [{
+    "matches": ["https://*.backlog.com/git/*/pullRequests/*/diff"],
+    "js": ["main.js"]
+  }]
+}
