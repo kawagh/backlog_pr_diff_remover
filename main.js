@@ -7,8 +7,8 @@ const timer = setInterval(()=>{
     const dataPath = e.getAttribute("data-path");
     if(
       dataPath.includes("openapi")
-      || dataPath.endsWith("freezed.dart")
-      || dataPath.endsWith("g.dart")
+      || dataPath.endsWith(".freezed.dart")
+      || dataPath.endsWith(".g.dart")
     ){
       console.log(`backlog_pr_diff_remover: removed ${dataPath}`);
       e.remove();
